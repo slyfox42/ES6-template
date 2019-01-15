@@ -1,0 +1,11 @@
+@import '../../_settings/variables';
+
+.basic-button {
+  padding: $dist-xs;
+  margin: $dist-s 0;
+  border-radius: $border-radius;
+  background: $button-color;
+  &:hover {
+    background: darken($button-color, 10%);
+  }
+}

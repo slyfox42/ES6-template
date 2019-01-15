@@ -3,8 +3,9 @@
 .body-container{
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background: #585123;
+  background: #161925;
   text-align: center;
   width: 100vw;
   height: 100vh;
