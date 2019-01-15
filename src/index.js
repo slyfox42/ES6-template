@@ -1,3 +1,4 @@
+import './components/_settings/_base.scss'
 import * as serviceWorker from './serviceWorker'
 import App from './App'
 import React from 'react'

@@ -1,0 +1,19 @@
+@import './components/_settings/variables';
+
+.body-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #585123;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  .title{
+    margin: 0;
+    font-size: $dist-xl;
+    font-weight: 700;
+  }
+}
+
+
