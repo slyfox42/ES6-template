@@ -1,0 +1,3 @@
+export const ACTION_TYPES = {
+  COUNTER_ADD: 'COUNTER_ADD'
+}
