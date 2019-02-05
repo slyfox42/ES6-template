@@ -8,4 +8,6 @@
   &:hover {
     background: darken($button-color, 10%);
   }
+  user-select: none;
+  cursor: pointer;
 }
