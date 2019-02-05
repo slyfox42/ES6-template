@@ -6,19 +6,27 @@ import counterActions from '../../../actions/counter-actions'
 
 const Button = props => {
   console.log(props)
+  const onClick = () => {
+    //dispatch an action
+    props.dispatch({
+      type: 'COUNTER_ADD',
+      amount: 1
+    })
+  }
+
   return (
     <div className="basic-button" onClick={onClick}>
-      Click me!
+      {props.counter}
     </div>
   )
 }
 
-const onClick = () => {
-  console.log('I have been clicked!')
-  //dispatch an action
-}
-
 export default connect(
   state => ({ counter: state.counter }),
-  dispatch => dispatch
+  // dispatch => bindActionCreators(counterActions, dispatch)
+  dispatch => ({
+    dispatch
+  })
 )(Button)
+
+// export default Button
